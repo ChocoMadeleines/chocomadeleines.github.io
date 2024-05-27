@@ -1,12 +1,413 @@
+@use "Colors";
 @import "/Assets/Fonts/ImportAll.css";
 
-body, html {
+body, html, main, .PageContent
+{
     height: 100%;
 }
 
-body {
+//* { margin: 0 }
+
+body
+{
+    margin: 0;
+
     background-color:   var(--PageBackground);
     color:              var(--PageForeground);
-    
+}
+
+span.StylizedUsername
+{
     font-family: "Le Murmure";
+}
+
+main
+{
+    display: flex;
+
+    /* Goes to middle of screen. */
+    margin: auto;
+    width: fit-content;
+
+    div.PageContent
+    {
+        padding: 1.5em;
+        box-sizing: border-box;
+
+        max-width: 32em;
+        width: 100vw;
+    }
+
+    &[CurrentPage="home"]
+    {
+        div.PageContent {
+            @media (max-width: 64em) {
+                height: 100%;
+                align-items: flex-end;
+            }
+            display:flex;
+            gap:1.5em;
+
+            div.SideBranding
+            {
+                display: flex;
+                flex-shrink: 0;
+                flex-direction: column;
+                gap: 0.4em;
+
+                font-size: 4em;
+                width: 1em;
+
+                overflow: hidden;
+
+                img.BrillanceIcon
+                {
+                    width: 1em;
+                }
+
+                span.StylizedUsername
+                {
+                    font-size: 1.1em;
+
+                    user-select: none;
+
+                    writing-mode: vertical-rl;
+                    text-orientation: sideways;
+                    transform: rotate(180deg);
+                }
+            }
+
+            div.Content
+            {
+                width: 100%;
+
+                display:flex;
+                flex-direction:column;
+                align-items: center;
+
+                @media (max-width: 64em) {
+                    padding-bottom: 4em;
+                }
+
+                h1 {
+                    //font-family: Resistance;
+                    font-family: "Le Murmure";
+                    font-size: 4em;
+                    margin: 0.3em 0 0.2em;
+                    font-weight: 400;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                svg.DecoratedAvatar
+                {
+                    g.Stars > *
+                    {
+                        transform-origin: center;
+
+                        &:nth-child(1) {
+                            animation: scintillate 3s infinite ease-in-out alternate;
+                            animation-delay: 2s;
+                        }
+                        &:nth-child(2) {
+                            animation: scintillate 4s infinite ease-in-out alternate;
+                            animation-delay: 1s;
+                        }
+                        &:nth-child(3) {
+                            animation: scintillate 5s infinite ease-in-out alternate;
+                        }
+                        &:nth-child(4) {
+                            animation: scintillate 6s infinite ease-in-out alternate;
+                        }
+                    }
+
+                    path.Avatar {
+                        animation: tilt 5s infinite ease-in-out alternate;
+                        transform-origin: center;
+                    }
+
+                    g.Lines {
+                        display: none;
+                    }
+
+                    g.Paws > * {
+                        animation: disappear 1s infinite linear alternate;
+
+                        &:first-child {
+                        }
+
+                        &:last-child {
+                            animation-delay: 0.24s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg) }
+}
+
+@keyframes disappear {
+    to { opacity: 0 }
+}
+
+@keyframes scintillate {
+    to {
+        transform: scale(0.96);
+        opacity: 0.8;
+    }
+}
+
+@keyframes tilt {
+    from { transform: rotate(-4deg) }
+    to { transform: rotate(4deg) }
+}
+
+p
+{
+    margin: 0.3em 0;
+
+    color: var(--ParagraphForeground);
+
+    font-family: "Source Serif Pro";
+
+    span.Small
+    {
+        font-size: 0.85em;
+    }
+}
+
+a
+{
+    color: var(--HyperlinkForeground);
+
+    padding: 0 0.2em;
+    margin: 0 -0.2em;
+
+    border-radius: 0.2em;
+
+    transition: 0.16s;
+
+    position: relative;
+    
+    display: inline-block;
+
+    @media not (pointer:coarse)
+    {
+        &:hover
+        {
+            color: white;
+
+            background: var(--HyperlinkForeground);
+            transition: 0.08s;
+        }
+    }
+
+    /* If external link */
+    &[href^="http"]
+    {
+        &::after
+        {
+            content: "↗";
+        }
+    }
+
+    /* If link to mail address */
+    &[href^="mailto:"]
+    {
+        &::after
+        {
+            content: "📋";
+            font-family: "Noto Emoji";
+        }
+
+        &::before
+        {
+            content: "Click to copy :3";
+
+            //font-family: "Le Murmure";
+            font-size: 0.8em;
+
+            position: absolute;
+            left:0;
+            right: 0;
+
+            margin: auto;
+            width: fit-content;
+
+            display: block;
+
+            margin-top: 2em;
+            padding: 0.5em 1em;
+
+            background: rgba(white, 0.5);
+            border: solid rgba(black, 0.1) 0.01em;
+            border-radius: 0.5em;
+            backdrop-filter: blur(5px);
+
+            pointer-events: none;
+
+            color: var(--ParagraphForeground);
+
+            transition: 0.24s cubic-bezier(1, 0, 0, 2);
+            transition-delay: 0.24s;
+
+            @media (pointer:coarse)
+            {
+                display: none;
+            }
+        }
+
+        &:not(:hover)::before
+        {
+            opacity: 0;
+            transform: translateY(-1em);
+            transition-timing-function: cubic-bezier(1, 0, 0, 1);
+        }
+    }
+
+    &:active {
+        transform: scale(0.96) !important;
+        transition: 0s;
+    }
+}
+
+button.ShowNavigation-Decoration
+{
+    display: flex;
+    align-items: center;
+
+    padding: 0;
+
+    z-index: 1;
+
+    background: none;
+    border: none;
+
+    transition: 0.24s;
+    transition-timing-function: cubic-bezier(1, 0, 0, 3);
+
+    img.MenuText {
+        padding: 0.15em 0;
+        border-bottom: 0.3em solid black;
+    }
+
+    div.MenuIcon
+    {
+        position: relative;
+
+        height: 4em;
+        aspect-ratio: 1 / 1;
+
+        img
+        {
+            pointer-events: none;
+
+            position: absolute;
+            left: 0;
+
+            height: 100%;
+
+            transition: 0.24s;
+
+            transition-timing-function: cubic-bezier(1, 0, 0, 2.25);
+
+            &.Top { transition-timing-function: cubic-bezier(1, 0, 0, 5) }
+        }
+    }
+}
+
+nav.NavigationLinks
+{
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+
+    padding: 1.5em;
+
+    @media (max-width: 64em) {
+        justify-content: end;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        padding: 1.9em;
+        padding-bottom: calc(1.9em + 4em);
+        box-sizing: border-box;
+
+        background: rgba(white, 0.9);
+        backdrop-filter: blur(8px);
+
+        transition: 0.24s ease-in;
+    }
+
+    > a {
+        font-family: "Le Murmure";
+        font-size: 4em;
+    }
+}
+
+input.ShowNavigation
+{
+    margin: 0;
+
+    z-index: 2;
+
+    height: 4em;
+    width: 9em;
+
+    transform: scale(1.05);
+
+    opacity: 0;
+
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    &:active {
+        ~ button.ShowNavigation-Decoration {
+            transform: scale(0.94);
+            transition: 0.04s ease-out;
+            opacity: 0.6;
+        }
+    }
+
+    &:checked {
+        ~ button.ShowNavigation-Decoration > div.MenuIcon
+        {
+            img.Top    { transform: translateY(-0.2em) }
+            img.Middle { transform: rotate(-20deg) translateY(0.3em)  translateX(-0.1em)}
+            img.Bottom { transform: rotate(20deg) translateY(-0.3em) translateX(0.1em)}
+        }
+    }
+
+    @media (max-width: 64em) {
+        &:not(:checked) ~ nav.NavigationLinks
+        {
+            opacity: 0;
+            pointer-events: none;
+
+            transition: 0.24s ease-out;
+        }
+    }
+}
+
+input.ShowNavigation,
+button.ShowNavigation-Decoration
+{
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+
+    @media not (max-width: 64em) {
+        display: none;
+    }
 }

@@ -1,0 +1,11 @@
+/*  Dark Theme */  @media(prefers-color-scheme: dark){
+
+body
+{
+    --PageBackground: black;
+    --PageForeground: white;
+    
+    --ParagraphForeground: rgba(white, 0.8);
+}
+
+}
