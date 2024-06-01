@@ -5,8 +5,9 @@ body
     --PageBackground: white;
     --PageForeground: black;
     
+    --AccentColor: #D67CA7;
+
     --ParagraphForeground: rgba(0, 0, 0, 0.7);
     
-    --HyperlinkForeground: #F80;
-    --VisitedHyperlinkForeground: #C50;
+    --HyperlinkForeground: var(--AccentColor);
 }
