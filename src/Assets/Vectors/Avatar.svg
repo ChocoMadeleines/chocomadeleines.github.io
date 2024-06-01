@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-19">
+      <stop offset="0" style="stop-color: rgb(152, 123, 129); stop-opacity: 0.9"/>
+      <stop offset="1" style="stop-color: rgb(91, 67, 91);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="636.246" y1="840.256" x2="636.246" y2="934.375" id="gradient-4" gradientTransform="matrix(0.998709, -0.050814, 0.021904, 0.430501, -15.521292, 526.660828)">
+      <stop offset="0" style="stop-color: rgb(218, 224, 231);"/>
+      <stop offset="1" style="stop-color: rgb(233, 237, 241);"/>
+    </linearGradient>
+    <filter id="inner-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="4"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="0.12"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="596.565" y1="171.581" x2="596.565" y2="865.724" id="gradient-17" gradientTransform="matrix(0.520661, -0.853764, 0.784058, 0.478151, -141.217468, 862.959022)">
+      <stop offset="0" style="stop-color: rgb(244, 246, 248);"/>
+      <stop offset="1" style="stop-color: rgb(233, 237, 241);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="614.986" y1="170.678" x2="614.986" y2="865.724" id="gradient-21" gradientTransform="matrix(0.601478, -0.79889, 0.72654, 0.547007, -167.912781, 805.901288)">
+      <stop offset="0" style="stop-color: rgb(87.451% 88.627% 89.412%)"/>
+      <stop offset="1" style="stop-color: rgba(126, 129, 131, 0);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="657.488" y1="910.4" x2="657.488" y2="1043.934" id="gradient-8" gradientTransform="matrix(0.529822, -0.848109, 1.080557, 0.675034, -757.210449, 850.692882)">
+      <stop offset="0" style="stop-color: rgb(138, 138, 156);"/>
+      <stop offset="1" style="stop-color: rgb(62, 48, 73);"/>
+    </linearGradient>
+    <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-9">
+      <stop offset="0" style="stop-color: rgb(174, 147, 193);"/>
+      <stop offset="1" style="stop-color: rgb(101, 34, 38);"/>
+    </linearGradient>
+    <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-10">
+      <stop offset="0" style="stop-color: rgb(174, 147, 193);"/>
+      <stop offset="1" style="stop-color: rgb(101, 34, 38);"/>
+    </linearGradient>
+    <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-11">
+      <stop offset="0" style="stop-color: rgb(174, 147, 193);"/>
+      <stop offset="1" style="stop-color: rgb(101, 34, 38);"/>
+    </linearGradient>
+    <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-12">
+      <stop offset="0" style="stop-color: rgb(174, 147, 193);"/>
+      <stop offset="1" style="stop-color: rgb(101, 34, 38);"/>
+    </linearGradient>
+    <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-13">
+      <stop offset="0" style="stop-color: rgb(174, 147, 193);"/>
+      <stop offset="1" style="stop-color: rgb(101, 34, 38);"/>
+    </linearGradient>
+    <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-14">
+      <stop offset="0" style="stop-color: rgb(174, 147, 193);"/>
+      <stop offset="1" style="stop-color: rgb(101, 34, 38);"/>
+    </linearGradient>
+    <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-15">
+      <stop offset="0" style="stop-color: rgb(174, 147, 193);"/>
+      <stop offset="1" style="stop-color: rgb(101, 34, 38);"/>
+    </linearGradient>
+    <linearGradient x1="0" x2="0" y1="0" y2="1" id="gradient-16">
+      <stop offset="0" style="stop-color: rgb(174, 147, 193);"/>
+      <stop offset="1" style="stop-color: rgb(101, 34, 38);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="249.456" y1="510.737" x2="249.456" y2="572.318" id="gradient-2" spreadMethod="pad" gradientTransform="matrix(0.930794, -0.365545, 0.331126, 0.843151, -171.741135, 172.15799)">
+      <stop offset="0" style="stop-color: rgb(63, 63, 63);"/>
+      <stop offset="1" style=""/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="549.715" y1="52.606" x2="549.715" y2="75.28" id="gradient-7" gradientTransform="matrix(1.009354, -1.267594, 1.297523, 1.207609, -85.671943, 689.541384)">
+      <stop offset="0" style="stop-color: rgb(73.725% 58.824% 66.667%)"/>
+      <stop offset="1" style="stop-color: rgb(46.157% 32.661% 39.957%)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="399.874" y1="337.313" x2="399.874" y2="611.007" id="gradient-1" gradientTransform="matrix(1, 0, 0, 1, -0.000149, -0.000177)">
+      <stop offset="0" style="stop-color: rgb(90.98% 77.647% 98.039% / 0.13)"/>
+      <stop offset="1" style="stop-color: rgba(221, 125, 94, 0.13);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="399.874" y1="323.901" x2="399.874" y2="624.419" id="gradient-0" gradientTransform="matrix(1, 0, 0, 1, -0.000149, -0.000177)">
+      <stop offset="0" style="stop-color: rgb(74.118% 59.608% 62.353%)"/>
+      <stop offset="1" style="stop-color: rgb(46.346% 33.284% 35.924%)"/>
+    </linearGradient>
+    <filter id="drop-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="5" dy="10"/>
+      <feComponentTransfer result="offsetblur">
+        <feFuncA id="spread-ctrl" type="linear" slope="0.6"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.3)"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="clip-0">
+      <path style="fill: rgb(244, 246, 248);" d="M 218.946 526.992 C 218.946 526.992 206.019 613.181 233.426 641.968 C 251.126 660.559 259.793 676.175 269.359 695.384 C 278.151 713.037 276.366 735.881 288.64 751.317 C 316.807 786.738 362.742 804.152 403.73 823.336 C 439.886 840.259 478.206 853.821 517.548 860.595 C 560.54 867.997 604.803 865.815 648.382 863.822 C 687.431 862.036 726.582 858.158 764.861 850.242 C 786.712 845.723 808.495 839.85 828.972 830.986 C 849.421 822.135 869.883 811.961 886.808 797.469 C 911.469 776.353 933.885 750.942 948.034 721.722 C 965.858 684.913 971.169 642.756 975.064 602.044 C 979.384 556.895 976.947 510.981 970.8 466.044 C 964.01 416.411 959.159 363.967 934.994 320.086 C 913.146 280.413 880.113 244.637 840.78 222.182 C 778.853 186.828 703.637 166.251 632.632 172.812 C 576.277 178.019 521.025 205.54 477.407 241.602 C 432.684 278.577 378.214 384.664 378.214 384.664 L 355.629 452.84 L 218.946 526.992 Z">
+        <title>Head</title>
+      </path>
+    </clipPath>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="683.403" y1="56.056" x2="683.403" y2="718.786" id="gradient-3" gradientTransform="matrix(0.808328, -0.588731, 0.389271, 0.534471, -64.53476, 441.397552)">
+      <stop offset="0" style="stop-color: rgb(78, 66, 77); stop-opacity: 0.9;"/>
+      <stop offset="1" style="stop-color: rgb(31, 23, 31);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="683.403" y1="56.056" x2="683.403" y2="718.786" id="gradient-18" gradientTransform="matrix(0.818942, -0.573875, 0.637951, 0.910382, -86.044823, 411.843498)">
+      <stop offset="0" style="stop-opacity: 0.9; stop-color: rgb(152, 123, 129);"/>
+      <stop offset="1" style="stop-color: rgb(91, 67, 91);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="696.912" y1="36.968" x2="696.912" y2="747.153" id="gradient-20" gradientTransform="matrix(0.693447, -0.720508, 0.846056, 0.81428, -118.730993, 564.951922)">
+      <stop offset="0" style="stop-color: rgb(65, 27, 56); stop-opacity: 0.5;"/>
+      <stop offset="1" style="stop-color: rgb(19.464% 4.9044% 16.315%)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="716.644" y1="633.057" x2="716.644" y2="739.968" id="gradient-6" gradientTransform="matrix(0.182058, -0.983288, 4.803883, 0.88945, -2720.3479, 774.651794)">
+      <stop offset="0" style="stop-color: rgb(0% 0% 0% / 0.157)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 0);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="710.968" y1="677.931" x2="710.968" y2="785.596" id="gradient-5" gradientTransform="matrix(0.178124, -0.984008, 4.792632, 0.867555, -2926.974362, 794.646154)">
+      <stop offset="0" style="stop-color: rgb(0% 0% 0% / 0.157)"/>
+      <stop offset="1" style="stop-color: rgba(0, 0, 0, 0);"/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, -123.49527740478521, 38.33293533325194)" style="">
+    <path style="fill: url('#gradient-19'); stroke-linecap: round; stroke-linejoin: round; stroke-width: 12px; stroke: rgb(63, 28, 59);" d="M 715.181 766.904 C 672.996 783.646 702.424 851.876 728.687 854.126 C 741.65 885.422 800.412 896.314 827.861 869.374 C 889.764 881.26 908.609 761.506 879.436 719.153 C 865.37 698.732 830.789 693.99 807.164 701.524 C 765.324 714.868 723.255 723.332 715.181 766.904 Z"/>
+    <path style="fill: url('#gradient-4'); stroke: rgb(223, 226, 228); stroke-width: 12px;" d="M 533.629 851.367 C 533.629 851.367 584.674 856.906 598.592 877.256 C 608.214 891.324 604.219 934.375 604.219 934.375 L 708.796 931.107 C 708.796 931.107 695.449 888.133 703.567 869.014 C 709.498 855.045 738.862 840.256 738.862 840.256 L 533.629 851.367 Z"/>
+    <g>
+      <title>Ears</title>
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 12px; fill: rgb(233, 237, 241);" d="M 967.178 541.811 C 967.178 541.811 988.33 35.287 634.929 -30.368 C 634.929 -30.368 624.191 -32.926 621.459 -19.646 L 528.812 270.679" transform="matrix(0.999391, -0.0349, 0.0349, 0.999391, -8.46564, 26.264914)"/>
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 12px; fill: rgb(221, 224, 227); filter: url('#inner-shadow-filter-0');" d="M 541.927 241.167 L 622.455 -10.817 C 623.497 -16.393 626.549 -18.857 627.686 -14.588 L 626.023 263.758 L 541.927 241.167 Z" transform="matrix(0.999391, -0.0349, 0.0349, 0.999391, -3.954131, 20.48496)"/>
+    </g>
+    <g style="" transform="matrix(0.956305, -0.292372, 0.292372, 0.956305, -149.988725, 241.671845)">
+      <title>Spikes</title>
+      <path d="M 1532.021 1847.681 L 1595.262 1978.329 L 1468.781 1978.329 L 1532.021 1847.681 Z" style="fill: rgb(233, 237, 241); stroke: rgb(223, 226, 228); stroke-width: 12px;" transform="matrix(-0.927184, 0.374607, -0.374607, -0.927184, 2947.517569, 2084.707346)"/>
+      <path d="M 902.675 778.924 L 940.463 850.957 L 864.887 850.957 L 902.675 778.924 Z" style="fill: rgb(233, 237, 241); stroke: rgb(223, 226, 228); stroke-width: 12px;" transform="matrix(-0.71934, 0.694658, -0.694658, -0.71934, 2104.95374, 784.798488)"/>
+    </g>
+    <path style="stroke-miterlimit: 5.63; fill: url('#gradient-17'); stroke: url('#gradient-21'); stroke-width: 12px; paint-order: fill;" d="M 218.937 526.973 C 218.937 526.973 206.01 613.162 233.417 641.949 C 251.117 660.54 259.784 676.156 269.35 695.365 C 278.142 713.018 276.357 735.862 288.631 751.298 C 316.798 786.719 362.733 804.133 403.721 823.317 C 439.877 840.24 478.197 853.802 517.539 860.576 C 560.531 867.978 604.794 865.796 648.373 863.803 C 687.422 862.017 726.573 858.139 764.852 850.223 C 786.703 845.704 808.486 839.831 828.963 830.967 C 849.412 822.116 869.874 811.942 886.799 797.45 C 911.46 776.334 933.876 750.923 948.025 721.703 C 965.849 684.894 1005.67 623.443 1009.565 582.731 C 1013.885 537.582 1016.655 495.762 1010.508 450.825 C 1003.718 401.192 979.96 355.944 955.795 312.063 C 933.947 272.39 889.709 231.811 850.376 209.356 C 788.449 174.002 703.628 166.232 632.623 172.793 C 576.268 178 521.016 205.521 477.398 241.583 C 432.675 278.558 404.127 332.728 378.205 384.645 C 367.511 406.064 355.62 452.821 355.62 452.821 L 218.937 526.973 Z">
+      <title>Head</title>
+    </path>
+    <path style="fill: url('#gradient-8'); paint-order: stroke; stroke-width: 12px; stroke: rgb(55, 32, 63); stroke-opacity: 0.54;" d="M 590.285 902.806 L 718.944 893.054 C 743.878 890.004 742.261 912.305 735.951 920.942 C 735.951 920.942 735.595 937.52 739.314 948.748 C 739.928 950.602 742.62 952.47 742.62 952.47 L 767.278 975.819 L 667.125 1026.304 L 549.02 967.433 L 573.243 955.185 C 573.243 955.185 576.211 953.474 576.807 951.995 C 581.721 939.806 577.235 929.869 577.235 929.869 C 568.666 921.289 567.086 904.022 590.285 902.806 Z">
+      <title>Jacket</title>
+    </path>
+    <g transform="matrix(1, 0, 0, 1, 109.462029, -17.62982)">
+      <title>Jacket Retainments</title>
+      <line x1="479" y1="932.896" x2="482.574" y2="980.917" style="fill: url('#gradient-9'); stroke-linecap: round; stroke-width: 7px; stroke: rgba(255, 255, 255, 0.03);"/>
+      <line x1="498.13" y1="932.076" x2="501.706" y2="980.097" style="stroke-linecap: round; fill: url('#gradient-10'); stroke-width: 7px; stroke: rgba(255, 255, 255, 0.03);"/>
+      <line x1="517.231" y1="930.944" x2="520.805" y2="978.966" style="stroke-linecap: round; fill: url('#gradient-11'); stroke-width: 7px; stroke: rgba(255, 255, 255, 0.03);"/>
+      <line x1="536.071" y1="930.039" x2="539.646" y2="978.06" style="stroke-linecap: round; fill: url('#gradient-12'); stroke-width: 7px; stroke: rgba(255, 255, 255, 0.03);"/>
+      <line x1="554.396" y1="928.453" x2="557.971" y2="976.474" style="stroke-linecap: round; fill: url('#gradient-13'); stroke-width: 7px; stroke: rgba(255, 255, 255, 0.03);"/>
+      <line x1="573.497" y1="927.094" x2="577.071" y2="975.115" style="stroke-linecap: round; fill: url('#gradient-14'); stroke-width: 7px; stroke: rgba(255, 255, 255, 0.03);"/>
+      <line x1="594.146" y1="925.508" x2="597.718" y2="973.529" style="stroke-linecap: round; fill: url('#gradient-15'); stroke-width: 7px; stroke: rgba(255, 255, 255, 0.03);"/>
+      <line x1="613.762" y1="924.376" x2="617.334" y2="972.397" style="stroke-linecap: round; fill: url('#gradient-16'); stroke-width: 7px; stroke: rgba(255, 255, 255, 0.03);"/>
+    </g>
+    <path style="fill: url('#gradient-2'); paint-order: fill;" d="M 212.276 522.521 C 206.946 536.493 208.391 555.862 218.411 566.963 C 221.446 570.325 227.097 570.562 231.61 570.185 C 243.932 569.155 255.897 563.082 265.685 555.526 C 274.193 548.958 287.313 540.695 285.512 530.099 C 283.48 518.145 266.633 513.553 254.92 510.417 C 245.206 507.817 234.138 508.183 224.787 511.882 C 219.696 513.895 214.227 517.406 212.276 522.521 Z">
+      <title>Nose</title>
+    </path>
+    <polygon style="stroke-linejoin: round; stroke-width: 6px;" points="402.615 456.197 373.474 500.603 526.581 517.255 557.11 470.074">
+      <title>Eye</title>
+    </polygon>
+    <g>
+      <title>Eyes 2</title>
+    </g>
+    <ellipse style="" cx="489.477" cy="338.078" rx="36.973" ry="30.811" transform="matrix(0.927184, 0.374607, -0.374607, 0.927184, 163.693109, -125.894983)">
+      <title>Brow</title>
+    </ellipse>
+    <ellipse style="stroke: url('#gradient-0'); fill: url('#gradient-1'); filter: url('#drop-shadow-filter-0'); stroke-width: 14px;" cx="399.874" cy="474.16" rx="115.272" ry="136.847" transform="matrix(0.956305, 0.292372, -0.292372, 0.956305, 162.911571, -101.055627)">
+      <title>Glasses</title>
+    </ellipse>
+    <g>
+      <title>Mouth</title>
+      <g style="clip-path: url('#clip-0');">
+        <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: rgb(105, 114, 120); stroke-width: 10px;" d="M 223.702 642.181 C 207.633 663.027 273.895 689.182 277.221 657.267 C 291.928 686.154 347.934 706.137 340.815 655.775"/>
+        <path style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: rgb(105, 114, 120); stroke-width: 10px;" d="M 304.187 683.342 C 304.187 683.342 311.131 705.738 304.568 718.439 C 291.978 742.801 263.394 712.932 263.394 712.932"/>
+      </g>
+    </g>
+    <path style="stroke-linecap: round; stroke-linejoin: round; fill: url('#gradient-18'); paint-order: fill; stroke-width: 12px; stroke: url('#gradient-20');" d="M 357.002 259.499 C 316.767 230.44 345.729 151.233 395.205 154.247 C 397.913 88.241 448.532 24.9 505.352 50.775 C 541.472 25.476 587.939 35.555 618.824 76.002 C 652.46 55.71 694.254 48.202 706.795 91.571 C 743.324 74.173 799.465 85.892 808.273 134.161 C 859.444 111.946 906.685 180.907 884.476 194.169 C 970.074 188.55 1025.305 288.371 1015.505 369.573 C 1088.133 487.607 1050.721 579.523 996.327 636.072 C 1011.054 680.783 980.173 766.032 929.187 743.399 C 899.04 737.935 833.97 712.28 851.364 679.258 C 821.751 672.934 745.212 632.97 769.122 588.511 C 736.459 593.574 663.166 541.181 662.112 475.077 C 611.067 505.213 538.886 416.317 534.414 360.099 C 489.13 364.047 463.287 359.017 432.637 314.103 C 412.985 321.439 337.567 322.021 357.002 259.499 Z">
+      <title>Hair V2</title>
+    </path>
+    <g transform="matrix(1, 0, 0, 1, 1, 20)">
+      <title>Whiskers Spots</title>
+      <ellipse style="fill: rgba(0, 0, 0, 0.14);" cx="384.784" cy="660.876" rx="7.373" ry="7.373"/>
+      <ellipse style="fill: rgba(0, 0, 0, 0.14);" cx="398.357" cy="635.238" rx="6.87" ry="6.87"/>
+      <ellipse style="fill: rgba(0, 0, 0, 0.14);" cx="423.827" cy="633.227" rx="7.876" ry="7.541"/>
+      <ellipse style="fill: rgba(0, 0, 0, 0.14);" cx="414.443" cy="664.395" rx="6.535" ry="6.535"/>
+    </g>
+    <g style="" transform="matrix(1, 0, 0, 1, -9.662862, 31.404301)">
+      <title>Whiskers</title>
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 12px; fill: url('#gradient-6');" d="M 461.839 633.075 C 459.971 632.77 459.577 636.416 462.72 636.929 L 960.936 739.674 C 969.244 742.55 981.542 723.506 963.844 717.38 L 461.839 633.075 Z"/>
+      <path style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 12px; fill: url('#gradient-5');" d="M 456.304 678.418 C 452.42 677.665 453.903 682.446 456.212 682.893 L 954.428 785.638 C 963.761 788.834 977.216 770.152 957.336 763.344 L 456.304 678.418 Z" transform="matrix(0.994522, 0.104528, -0.104528, 0.994522, 80.425767, -70.283618)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 107.542999, 0)">
+      <title>Stars</title>
+      <path style="fill: rgb(105, 66, 109);" d="M 118.767 293.182 C 145.912 279.187 148.446 278.548 156.064 221.083 C 164.4 278.211 166.609 282.975 199.195 294.485 C 167.807 306.126 166.07 317.239 155.749 363.364 C 147.878 316.91 148.138 308.802 118.767 293.182 Z"/>
+      <path style="fill: rgb(105, 66, 109);" d="M 76.63 371.699 C 93.274 363.096 94.828 362.704 99.499 327.379 C 104.61 362.497 105.965 365.425 125.945 372.5 C 106.699 379.656 105.634 386.488 99.306 414.841 C 94.48 386.285 94.639 381.301 76.63 371.699 Z"/>
+    </g>
+  </g>
+</svg>
