@@ -185,7 +185,7 @@ input.ShowNavigation
 @keyframes LinkAppearing
 {
     from {
-        transform: translateX(2em);
+        transform: translateX(2em) translateY(0.25em);
         opacity: 0;
     }
 }
