@@ -1,0 +1,175 @@
+button.ShowNavigation-Decoration
+{
+    display: flex;
+    align-items: center;
+
+    padding: 0;
+
+    z-index: 1;
+
+    background: none;
+    border: none;
+
+    transition: 0.24s;
+    transition-timing-function: cubic-bezier(1, 0, 0, 3);
+
+    img.MenuText {
+        padding: 0.15em 0;
+        border-bottom: 0.3em solid black;
+    }
+
+    div.MenuIcon
+    {
+        position: relative;
+
+        height: 4em;
+        aspect-ratio: 1 / 1;
+
+        img
+        {
+            pointer-events: none;
+
+            position: absolute;
+            left: 0;
+
+            height: 100%;
+
+            transition: 0.24s;
+
+            transition-timing-function: cubic-bezier(1, 0, 0, 2.25);
+
+            &.Top { transition-timing-function: cubic-bezier(1, 0, 0, 5) }
+        }
+    }
+}
+
+nav.NavigationLinks
+{
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+
+    padding: 1.5em;
+
+    @media (max-width: 64em) {
+        justify-content: end;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        padding: 1.9em;
+        padding-bottom: calc(1.9em + 4em);
+        box-sizing: border-box;
+
+        background: rgba(white, 0.9);
+        backdrop-filter: blur(8px);
+
+        transition: 0.24s ease-in;
+
+        > a {
+            --delays: 0.1s;
+
+            $count: 5;
+            @for $i from 1 through $count {
+                &:nth-child(#{$i}) { animation-delay: calc(var(--delays) * #{$count - $i}) }
+            }
+        }
+    }
+
+    > a {
+        font-family: "Le Murmure", sans-serif;
+        font-size: 4em;
+    }
+}
+
+input.ShowNavigation
+{
+    margin: 0;
+
+    z-index: 2;
+
+    height: 4em;
+    width: 9em;
+
+    transform: scale(1.05);
+
+    opacity: 0;
+
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    &:active {
+        ~ button.ShowNavigation-Decoration {
+            transform: scale(0.94);
+            transition: 0.04s ease-out;
+            opacity: 0.6;
+        }
+    }
+
+    &:checked {
+        ~ button.ShowNavigation-Decoration > div.MenuIcon
+        {
+            img.Top    { transform: translateY(-0.2em) }
+            img.Middle { transform: rotate(-20deg) translateY(0.3em)  translateX(-0.1em) }
+            img.Bottom { transform: rotate(20deg) translateY(-0.3em) translateX(0.1em) }
+        }
+    }
+
+    @media (max-width: 64em) {
+        &:not(:checked) ~ nav.NavigationLinks
+        {
+            opacity: 0;
+            pointer-events: none;
+
+            transition: 0.24s ease-out;
+            transition-delay: 0.56s;
+
+            > a {
+                animation-name: LinkDisappearing;
+                animation-duration: 0.48s;
+                animation-fill-mode: both;
+                animation-timing-function: cubic-bezier(.6,-0.5,0,1);
+            }
+        }
+
+        &:checked ~ nav.NavigationLinks > a
+        {
+            animation-name: LinkAppearing;
+            animation-duration: 0.64s;
+            animation-fill-mode: both;
+            animation-timing-function: cubic-bezier(.17,1.4,.3,1);
+        }
+    }
+}
+
+@keyframes LinkAppearing
+{
+    from {
+        transform: translateX(2em);
+        opacity: 0;
+    }
+}
+
+@keyframes LinkDisappearing
+{
+    to {
+        transform: translateX(4em);
+        opacity: 0;
+    }
+}
+
+input.ShowNavigation,
+button.ShowNavigation-Decoration
+{
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+
+    @media not (max-width: 64em) {
+        display: none;
+    }
+}
