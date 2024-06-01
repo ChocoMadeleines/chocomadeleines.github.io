@@ -43,6 +43,26 @@ button.ShowNavigation-Decoration
     }
 }
 
+nav.NavigationLinks img.BrillanceIcon
+{
+    @media not (max-width: 64em) { display: none }
+
+    height: 8em;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    opacity: 0.1;
+
+    transform:
+        translateX(-38%)
+        translateY(12%)
+        rotate(-10deg);
+
+    transition: 1.28s ease-out;
+}
+
 nav.NavigationLinks
 {
     display:flex;
@@ -51,7 +71,8 @@ nav.NavigationLinks
 
     padding: 1.5em;
 
-    @media (max-width: 64em) {
+    @media (max-width: 64em)
+    {
         justify-content: end;
 
         position: fixed;
@@ -70,17 +91,19 @@ nav.NavigationLinks
 
         transition: 0.24s ease-in;
 
-        > a {
+        > a
+        {
             --delays: 0.1s;
 
             $count: 5;
             @for $i from 1 through $count {
-                &:nth-child(#{$i}) { animation-delay: calc(var(--delays) * #{$count - $i}) }
+                &:nth-of-type(#{$i}) { animation-delay: calc(var(--delays) * #{$count - $i}) }
             }
         }
     }
 
-    > a {
+    > a
+    {
         font-family: "Le Murmure", sans-serif;
         font-size: 4em;
     }
@@ -133,6 +156,19 @@ input.ShowNavigation
                 animation-duration: 0.48s;
                 animation-fill-mode: both;
                 animation-timing-function: cubic-bezier(.6,-0.5,0,1);
+            }
+
+            img.BrillanceIcon {
+                transform:
+                    translateX(-38%)
+                    translateY(12%)
+                    rotate(-7.4deg)
+                    scale(1.1);
+
+                transition-delay: inherit;
+                transition-timing-function: ease-in;
+                transition-duration: inherit;
+                opacity: 0;
             }
         }
 
